@@ -26,7 +26,7 @@ class Email{
         $phpmailer->SMTPAuth = true;
         $phpmailer->Port = $_ENV['EMAIL_PORT'];
         $phpmailer->Username = $_ENV['EMAIL_USER'];
-        $phpmailer->Password = $_ENV['EMAIL__PASS'];
+        $phpmailer->Password = $_ENV['EMAIL_PASS'];
 
         $phpmailer->setFrom('cuentas@salon.com');
         $phpmailer->addAddress('cuentas@appsalon.com', 'AppSalon.com');
